@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0,user-scalable=yes"/>
+    <title>CodeByRAHUL</title>
+    <link rel="icon" href="images\codebyrah.png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body oncontextmenu="return false">
+    <!--ONLOAD SCRIPT-->
+<script>
+    function loader() {
+        var lo = document.getElementById("loader");
+        lo.style.display = 'none';
+
+    }
+    setTimeout(loader, 2000);
+</script>
+<!-- Loading ......... -->
+<div id="loader"> </div>
+<!------Header-->
+    <div class="header">
+  <div class="container">
+      <!-------nav-->
+    <div class="navbar">
+        <div class="logo">
+        <a href="index.html"> <img loading="lazy" src="images\codebyrahu.png" alt="loading" width="200px"></a>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><i><a href="index.html">Home</i></a></li>
+                <li><i><a href="">languages</i></a></li>
+                <li><i><a href="">codes</i></a></li>
+                <li><i><a href="login.html">Accounts</i></a></li>  
+            </ul>
+        </nav>
+        <img loading="lazy" src="images/menu.png" class="menu-icon" onclick="menutoggle()" >
+    </div>
+    <div align="center">
+        <img  id="head" loading="lazy" src="images/text (2).gif" alt="Loading...">
+    </div>
+    <!----Typing Script-->
+    <div id="marquee"></div>
+    <!-- Typing Script -->
+    <script>
+        var i = 0;
+        var speed = 50;
+        var msg = "WELCOME TO CODE By RAHUL....";
+        function type() {
+
+            if (i < msg.length) {
+                var op = document.getElementById("marquee");
+                op.innerHTML += msg.charAt(i);
+                i++;
+                setTimeout(type, speed);
+            }
+        }
+        var x = setTimeout(type, 1500);
+    </script>
+    <div class="row">
+        <div class="col-2">
+            <h1>"Experience is the name everyone<br> gives to their mistakes.."</h1>
+            <p>Success isn"t always about.It,s about consistency.Consistent<br> hard work gains success.Greatness will come.</p>
+            <a href="" class="btn">Explore Now &#8594;</a>
+        </div>
+       <div class="col-2">
+           <img loading="lazy" src="images/20220710_154149.png" alt="Loading..">
+       </div>
+
+        </div>
+    </div>
+</div>
+<!----Featured-->
+<div class="categories">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <img loading="lazy" src="images\monitor-1307227__340.png" alt="Loading">
+            </div>
+            <div class="col-3">
+                <img loading="lazy" src="images/featured1.png" alt="Loading">
+            </div>
+            <div class="col-3">
+                <img loading="lazy" src="images/programming.jpg" alt="Loading">
+            </div>
+        </div>
+    </div>
+</div>
+<!--All programing Language-->
+   <div class="small-container">
+       <h2 class="title">All Programming Language</h2>
+       <div class="row">
+           <div class="col-4">
+           <a href="#"><img loading="lazy" src="images/c1.png"></a>
+           <a href="#"><h4><b>C PROGRAMMING</b></h4></a>
+           </div>
+           <div class="col-4">
+           <a href="#"><img loading="lazy" src="images/cpp2.png"></a>
+           <a href="#"><h4><b>C++ PROGRAMMING</b></h4></a>
+        </div>
+        <div class="col-4">
+        <a href="#"><img loading="lazy" src="images/html5.png"></a>
+        <a href="#"><h4><b>HTML</b></h4></a>
+        </div>
+        <div class="col-4">
+        <a href="#"><img loading="lazy" src="images/css1.jpg"></a>
+        <a href="#"><h4><b>CSS</b></h4></a>
+        </div>
+        <div class="col-4">
+        <a href="#"><img loading="lazy" src="images/js1.png"></a>
+        <a href="#"><h4><b>JAVA SCRIPT</b></h4></a>
+        </div>
+        <div class="col-4">
+        <a href="#"><img loading="lazy" src="images/php.png"></a>
+        <a href="#"><h4><b>PHP</b></h4></a>
+     </div>
+     <div class="col-4">
+     <a href="#"><img loading="lazy" src="images/my sql.png"></a>
+     <a href="#"><h4><b> SQL</b></h4></a>
+     </div>
+     <div class="col-4">
+     <a href="#"><img loading="lazy" src="images/java.png"></a>
+     <a href="#"><h4><b>java</b></h4></a>
+     </div>
+       </div>
+   </div>
+   <!---creator-->
+   <!-----
+   <div class="creator">
+       <div class="small-container">
+        <h2 class="title">Meet Our teammates</h2>
+           <div class="row">
+               <div class="col-3">
+               <a href="https://www.instagram.com/rahul_gorai.2003/?hl=en"><img   loading="lazy" src="images/rahul.jpg" alt=""></a>
+               <a href="https://www.instagram.com/rahul_gorai.2003/?hl=en"><h6><b>RAHUL GORAI</b></h6></a>
+                   <p><b>Front End Developer & Back End Developer</b></p>
+               </div>
+           </div>
+       </div>
+
+   </div>
+   ---->
+   <!-----------testimonial---------->
+   <div class="testimonial">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+               <i class="fa fa-quote-left"></i>
+                <p>Lorem is simply dummy text of the printing 
+                    nad typesetting industry.Lorem Ipsum has been the
+                     industry"s standard dummy text ever.</p>
+                     <div class="rating">
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star-half-o"></i>
+                       <i class="fa fa-star-o"></i>
+                    </div> 
+                    <img loading="lazy" src="https://png.pngtree.com/png-clipart/20190520/original/pngtree-vector-users-icon-png-image_4144740.jpg">
+                    <h4>Person 1</h4>
+            </div>
+            <div class="col-3">
+               <i class="fa fa-quote-left"></i>
+                <p>Lorem is simply dummy text of the printing 
+                    nad typesetting industry.Lorem Ipsum has been the
+                     industry"s standard dummy text ever.</p>
+                     <div class="rating">
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star-half-o"></i>
+                       <i class="fa fa-star-o"></i>
+                    </div> 
+                    <img loading="lazy" src="https://png.pngtree.com/png-clipart/20190520/original/pngtree-vector-users-icon-png-image_4144740.jpg">
+                    <h4>person 2</h4>
+            </div>
+            <div class="col-3">
+               <i class="fa fa-quote-left"></i>
+                <p>Lorem is simply dummy text of the printing 
+                    nad typesetting industry.Lorem Ipsum has been the
+                     industry"s standard dummy text ever.</p>
+                     <div class="rating">
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star-half-o"></i>
+                       <i class="fa fa-star-o"></i>
+                    </div> 
+                    <img loading="lazy" src="https://png.pngtree.com/png-clipart/20190520/original/pngtree-vector-users-icon-png-image_4144740.jpg">
+                    <h4>Person 3</h4>
+            </div>
+        </div>
+    </div>
+</div>
+<!---comment-->
+<div class="comment-box">
+        <h5><b> <u>Leave Us A Comment</b></u></h5>
+          <form id="comment-form" method="post"  action="account.php">
+       <input type="text" name="name" class="form-control" placeholder="Full Name.." required>
+       <input type="email" name="email" class="form-control" placeholder="Email Address.." required>
+       <textarea name="comment" class="form-control" placeholder="Type Your comment.." required></textarea>
+       <div id="comment_button">
+       <button class="btn1" type="submit" value="sumbit" >Submit Comment</button>
+       <br><button class="btn2" type="reset" value="reset">Reset</button>
+       </div>
+    </form>
+    </div>       
+<!-------brands------>
+<div class="brands">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-5">
+                <img loading="lazy" src="images/logo-godrej.png">
+            </div>
+            <div class="col-5">
+                <img loading="lazy" src="images/logo-oppo.png">
+            </div>
+            <div class="col-5">
+                <img loading="lazy" src="images/logo-paypal.png">
+            </div>
+            <div class="col-5">
+                <img loading="lazy" src="images/logo-philips.png">
+            </div>
+            <div class="col-5">
+                <img loading="lazy" src="images/logo-coca-cola.png">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------footer-->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <img loading="lazy" src="images\codebyrah.png" alt="Loading" width="125px" class="center">
+                <p>Our Purpose Is To Sustainably make<br>The Pleasure and
+                    Benefits of Suports Accessible to the Many.</p>
+            </div>
+            <div class="footer-col-2">
+                <h3>Useful Links</h3>
+                 <ul>
+                     <li>contacts</li>
+                     <li>email</li>
+                     <li>privarcy Policy</li>
+                     <li>join</li>
+                 </ul>
+            </div>
+            <div class="footer-col-3">
+                <h3>Follow us</h3>
+                 <ul>
+                     <a href="#"><li><font color="#0008ff"><i class="fa fa-facebook-square"> Facebook</i></a></li></font>
+                      <a href="#"></li><font color="#ff00dd"><i class="fa fa-instagram" >Instagram</i></a></li></font><br>
+                      <a href="#"></li><font color="#ff0044"><i class="fa fa-youtube-play">Youtube</i></a></li></font><br>
+                         <a href="#"></li><font color="#00c8ff"><i class="fa fa-twitter">Twitter</i></a></li></font><br>
+                       <a href="#"></li><font color="cyan"><i class="fa fa-telegram">Telegram</i></a></li></font><br>
+                 </ul>
+            </div>
+        </div>
+        <hr>
+            <p class="copyright"><small>© Copyright</small><a href="#"><font color="#00c8ff"><u><i>@CodyByRAHUL</i> </u></p></a></font>
+    </div>
+</div>
+<!---js-->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+
+</body>
+</html>

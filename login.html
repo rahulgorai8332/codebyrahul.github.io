@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeByRSA Login Page</title>
+    <link rel="icon" href="images\codebyrah.png">
+   </head>
+   <body oncontextmenu="return false">
+  <div class="container">
+    <input type="checkbox" id="flip">
+    <div class="align">
+    <a href="index.html"><i class="fa fa-times"></i></a>
+  </div>
+    <div class="cover">
+      <div class="front">
+        <img  class="frontimg" loading="lazy" src="https://images.pexels.com/photos/3082341/pexels-photo-3082341.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+        <div class="text">
+          <span class="text-1">Every new friend is a <br> new adventure</span>
+          <span class="text-2">Let's get connected</span>
+        </div>
+      </div>
+      <div class="back">
+        <img  class="backimg" loading="lazy" src="https://images.pexels.com/photos/1181555/pexels-photo-1181555.jpeg" alt="loading">
+        <div class="text">
+          <span class="text-1">Complete miles of journey <br> with one step</span>
+          <span class="text-2">Let's get started</span>
+        </div>
+      </div>
+    </div>
+    <div class="forms">
+        <div class="form-content">
+          <div class="login-form">
+            <div class="title">Login</div>
+          <form action="validation.php" name="myForm" method="post">
+            <div class="input-boxes">
+              <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input type="email" name="emal" placeholder="Enter your email"  required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input type="password" name="passw" placeholder="Enter your password" id="myInput" required>
+                <main onclick="myFunction()">
+                <i id="show1" style="color:black" class="fa fa-eye"></i>
+                <i id="show2" style="color:black" class="fa fa-eye-slash"></i>
+               </main>
+              </div>
+              
+             <div class="text"><a href="#">Forgot password?</a></div>
+             
+              <div class="button input-box">
+                <input type="submit" name="log" id="logButton" value="Login" onclick="myFunction()" >
+              </div>
+              <div class="text sign-up-text">Don't have an account? <label for="flip">Sigup now</label></div>
+            </div>
+        </form>
+      </div>
+        <div class="signup-form">
+          <div class="align-2">
+          <a href="index.html"><i class="fa fa-times"></i></a>
+        </div>
+          <div class="title"> Signup</div>
+        <form action="registration.php" name="my-from" method="post">
+            <div class="input-boxes">
+              <div class="input-box">
+                <i class="fas fa-user"></i>
+                <input type="text" name="uname" placeholder="Enter your name" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input type="email" name="emal" placeholder="Enter your email" required>
+              </div> 
+              <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input type="password" name="passw" placeholder="Enter your password" id="myInput1" required>
+                <main onclick="myFunction1()">
+                <i id="show3" style="color:black" class="fa fa-eye"></i>
+                <i id="show4" style="color:black" class="fa fa-eye-slash"></i>
+               </main>
+              </div>
+              <div class="button input-box">
+                <input type="submit" name="reg" id="regbutton" value="Register" onclick="validate()" >
+              </div>
+              <div class="text sign-up-text">Already have an account? <label for="flip">Login now</label></div>
+            </div>
+      </form>
+    </div>
+    </div>
+    </div>
+  </div>
+  <script>
+function myFunction(){
+  var x=document.getElementById("myInput");
+  var y=document.getElementById("show1");
+  var z=document.getElementById("show2");
+  if(x.type==='password'){
+    x.type="text";
+    y.style.display="block";
+    z.style.display="none";
+  }
+  else{
+    x.type="password";
+    y.style.display="none";
+    z.style.display="block";
+  }
+}
+</script>
+<script>
+function myFunction1(){
+  var a=document.getElementById("myInput1");
+  var b=document.getElementById("show3");
+  var c=document.getElementById("show4");
+  if(a.type==='password'){
+    a.type="text";
+    b.style.display="block";
+    c.style.display="none";
+  }
+  else{
+    a.type="password";
+    b.style.display="none";
+    c.style.display="block";
+  }
+}
+</script> 
+</body>
+</html>
+
+
+  
