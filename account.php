@@ -13,5 +13,5 @@ $email_body ="User name:$name.\n".
   $headers="From:$email_from \r\n";
   $headers .="Reply-to:$visitor_email \r\n";
   mail($to,$email_subject,$email_body,$headers);
-  header('location:index.html');     
+  header("location:index.html");     
 ?>
