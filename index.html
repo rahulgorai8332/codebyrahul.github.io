@@ -29,14 +29,15 @@
       <!-------nav-->
     <div class="navbar">
         <div class="logo">
-        <a href="index.html"> <img loading="lazy" src="images\codebyrahu.png" alt="eager" width="200px"></a>
+        <a href="index.html"> <img loading="lazy" src="images\codebyrahu.png" alt="loading" width="200px"></a>
         </div>
         <nav>
             <ul id="MenuItems">
                 <li><i><a href="index.html">Home</i></a></li>
                 <li><i><a href="#language">languages</i></a></li>
                 <li><i><a href="">codes</i></a></li>
-                <li><i><a href="login.html">Accounts</i></a></li>  
+                <li><i><a href="login.html">Accounts</i></a></li> 
+                <li><i><a href="#comment">Contact</i></a></li> 
             </ul>
         </nav>
         <img loading="lazy" src="images/menu.png" class="menu-icon" onclick="menutoggle()" >
@@ -198,12 +199,12 @@
     </div>
 </div>
 <!---comment-->
-<div class="comment-box">
+<div class="comment-box" id="comment">
         <h5><b> <u>Leave Us A Comment</b></u></h5>
           <form id="comment-form" method="post"  action="account.php">
        <input type="text" name="name" class="form-control" placeholder="Full Name.." required>
        <input type="email" name="email" class="form-control" placeholder="Email Address.." required>
-       <textarea name="comment" class="form-control" placeholder="Type Your comment.." required></textarea>
+       <textarea name="message" class="form-control" placeholder="Type Your comment.." required></textarea>
        <div id="comment_button">
        <button class="btn1" type="submit" value="sumbit" >Submit Comment</button>
        <br><button class="btn2" type="reset" value="reset">Reset</button>
